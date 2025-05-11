@@ -68,7 +68,7 @@ app.get('/book/:id', async (req, res) => {
 
 
 // edit a book by id
-app.put('/book/edit/:id', async (req, res) => {
+app.put('/book/:id', async (req, res) => {
     try {
     const { id } = req.params;
     if(!req.body.title || !req.body.author || !req.body.publishYear || !req.body.description){
